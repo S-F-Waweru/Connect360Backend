@@ -1,0 +1,8 @@
+Create TABLE Views (
+    Id VARCHAR(255) PRIMARY KEY NOT NULL,
+    UserId VARCHAR(255),
+    Title VARCHAR(255),
+    Body VARCHAR(255),
+    FOREIGN KEY (UserId) REFERENCES Users (Id) 
+    ON DELETE CASCADE
+)

@@ -1,0 +1,14 @@
+
+Connect360Node/node_modules
+Connect360Node/dist
+Connect360Node/.env
+
+BackgroundServices/node_modules
+BackgroundServices/dist
+BackgroundServices/.env
+
+AIEndPoints/venv/
+AIEndPoints/db.sqlite3
+AIEndPoints/*.pyc
+AIEndPoints/AIEndPoints/__pycache__/
+

@@ -1,0 +1,116 @@
+POST http://localhost:2000/auth/register
+Content-Type: application/json
+
+{
+    "Username":"lilium",
+    "Email":"jinalily09@gmail.com",
+    "Password":"Qwerty@2024",
+    "Role":"Gov"
+}
+#########
+POST http://localhost:2000/auth/login
+Content-Type: application/json
+
+{
+    "Email":"s.wawerundegwa@gmail.com",
+    "Password":"Qwerty@2024"
+}
+
+######
+POST http://localhost:2000/auth/register
+Content-Type: application/json
+
+{
+    "Username":"Wesh",
+    "Email":"wawerufndegwa@gmail.com",
+    "Password":"Qwerty@2024",
+    "Role":"Gov"
+}
+
+#########################
+
+POST http://localhost:2000/auth/login
+Content-Type: application/json
+
+{
+    "Email":"s.f.ndegwa@gmail.com",
+    "Password":"Qwerty@2024"
+}
+
+##############
+POST http://localhost:2000/polls/add
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJTdWIiOiIyYzAxN2Y4Ny0wYTFjLTQxYzMtOGZiNS04MmEzNmMxMDBlZDUiLCJSb2xlIjoiR292IiwiaWF0IjoxNzIxMzAwNjU5LCJleHAiOjE3MjEzMDc4NTl9.HYaID16qnJfqz8rsIJzBTDc36HfbOPFuwBN8ZKPEdjY
+Content-Type: application/json
+
+{
+   "Question" : "Do you not support this Poet?",
+   "Choices"  : ["Yes", "No", "I dont know"]
+}
+
+#######################
+
+GET http://localhost:2000/polls
+
+
+##############
+POST http://localhost:2000/polls/vote
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJTdWIiOiJiZDRjZjAyMC1lZWE1LTRhZGYtYTc3NS1hZjVhZjQzZDg3NjQiLCJSb2xlIjoiQ2l0aXplbiIsImlhdCI6MTcyMTI5MTI0NywiZXhwIjoxNzIxMjk4NDQ3fQ.MhsQL85nkZTN3F_FP5hapnWBW-lQT44jmucHchxBdTo
+Content-Type: application/json
+
+{
+   "QuestionId":"2b145601-d6c1-490a-b16a-c1b1cfbf523f",
+   "ChoiceId":"28fe9a09-8a5c-4ea0-964f-3c6fa051bc66"
+}
+
+
+#######################
+
+GET http://localhost:2000/polls/votes
+
+
+###############################
+POST http://localhost:2000/views/add
+token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJTdWIiOiJiZDRjZjAyMC1lZWE1LTRhZGYtYTc3NS1hZjVhZjQzZDg3NjQiLCJSb2xlIjoiQ2l0aXplbiIsImlhdCI6MTcyMTMwNDYxNiwiZXhwIjoxNzIxMzExODE2fQ.W1RQgNnajhREcQHg36DczSZ_4omZVvVfE0iQVwhA2uk 
+Content-Type: application/json
+
+{
+   "Title" : "Title 1 error",
+   "Body"  : "This is the Body for the Title 1"
+}
+
+#######################
+
+GET http://localhost:2000/views
+
+#######################
+
+GET http://localhost:2000/views/bd4cf020-eea5-4adf-a775-af5af43d8764
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJTdWIiOiJiZDRjZjAyMC1lZWE1LTRhZGYtYTc3NS1hZjVhZjQzZDg3NjQiLCJSb2xlIjoiQ2l0aXplbiIsImlhdCI6MTcyMTI5MTI0NywiZXhwIjoxNzIxMjk4NDQ3fQ.MhsQL85nkZTN3F_FP5hapnWBW-lQT44jmucHchxBdTo
+
+
+
+#######################
+
+GET http://localhost:2000/views/view/812a8fd4dac
+
+######################################
+DELETE  http://localhost:2000/views/delete/812a8fd4dac
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJTdWIiOiJiZDRjZjAyMC1lZWE1LTRhZGYtYTc3NS1hZjVhZjQzZDg3NjQiLCJSb2xlIjoiQ2l0aXplbiIsImlhdCI6MTcyMTI5MTI0NywiZXhwIjoxNzIxMjk4NDQ3fQ.MhsQL85nkZTN3F_FP5hapnWBW-lQT44jmucHchxBdTo
+
+
+###### put
+PUT  http://localhost:2000/views/update/410fcdb5-0b3e-4ce2-afab-21ba6c19caa5
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJTdWIiOiJiZDRjZjAyMC1lZWE1LTRhZGYtYTc3NS1hZjVhZjQzZDg3NjQiLCJSb2xlIjoiQ2l0aXplbiIsImlhdCI6MTcyMTMwNDYxNiwiZXhwIjoxNzIxMzExODE2fQ.W1RQgNnajhREcQHg36DczSZ_4omZVvVfE0iQVwhA2uk 
+Content-Type: application/json
+
+{
+   "Title" : "Title 1 Updated",
+   "Body"  : "This is the Body for the Title 1"
+}
+
+
+
+
+
+##############
+GET http://localhost:2000/incidents

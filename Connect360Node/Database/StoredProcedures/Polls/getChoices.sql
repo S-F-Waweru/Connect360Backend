@@ -1,0 +1,5 @@
+CREATE or ALTER PROCEDURE GetChoices
+As
+BEGIN
+    SELECT * FROM Choices
+END

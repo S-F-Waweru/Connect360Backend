@@ -1,0 +1,7 @@
+CREATE or ALTER PROCEDURE GetAllUserViews(
+    @UserId VARCHAR(255)
+)
+As
+BEGIN
+    SELECT *FROM Views WHERE UserId = @UserId
+END

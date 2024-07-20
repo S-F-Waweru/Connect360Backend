@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to T2G!</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    .container {
+      min-width: 960px;
+      margin: 0 auto;
+    }
+    .row {
+      display: flex;
+      justify-content: center;
+    }
+    .col-md-6 {
+      width: 70%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card welcome-card" style="background-color: #f5f5f5; border: 1px solid #ddd; border-radius: 5px; padding: 20px;">
+          <div class="card-body">
+            <h1>Welcome to Sam' Tours</h1>
+            <h3 class="card-title" style="font-weight: bold; font-size: 1.2rem; margin-bottom: 10px;">Welcome aboard, <%=name%>!</h3>
+            <p class="card-text" style="color: #333; line-height: 1.5;">We're thrilled to have you join our community at Sam's tours. We're confident you'll find value in every tour we have to offer.</p>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item" style="border-color: transparent;">
+                Explore our platform and discover the amazing features available to you.
+              </li>
+              <li class="list-group-item" style="border-color: transparent;">
+                <a href="#" style="color: #007bff; text-decoration: none;">Get started guide</a> will help you navigate the basics.
+              </li>
+              <li class="list-group-item" style="border-color: transparent;">
+                Have questions or need help? Don't hesitate to reach out to our friendly <a href="#" style="color: #007bff; text-decoration: none;">support team</a>.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

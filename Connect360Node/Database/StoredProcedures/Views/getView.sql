@@ -1,0 +1,7 @@
+CREATE or ALTER PROCEDURE GetView(
+    @Id VARCHAR(255)
+)
+As
+BEGIN
+    SELECT *FROM Views WHERE Id = @Id
+END
